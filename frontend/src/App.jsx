@@ -5,7 +5,8 @@ import { Routes, Route } from "react-router-dom";
 import { MovieProvider } from "./contexts/MovieContext";
 import NavBar from "./components/NavBar";
 
-// The app demonstrates changing pages while keeping the Navbar during page changes.
+// The app demonstrates changing pages while keeping the Navbar during page changes, via useContext hook
+// in MovieContext.jsx
 
 function App() {
   return (
