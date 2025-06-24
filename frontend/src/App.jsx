@@ -2,13 +2,14 @@ import Home from "./pages/Home";
 import "./css/App.css";
 import Favorites from "./pages/Favorites";
 import { Routes, Route } from "react-router-dom";
+import { MovieProvider } from "./contexts/MovieContext";
 import NavBar from "./components/NavBar";
 
 // The app demonstrates changing pages while keeping the Navbar during page changes.
 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
       <main className="main-content">
         <Routes>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </main>
-    </div>
+    </MovieProvider>
   );
 }
 
