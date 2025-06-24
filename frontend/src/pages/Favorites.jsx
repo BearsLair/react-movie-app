@@ -1,9 +1,10 @@
-function Favorite() {
+function Favorites() {
   return (
     <div className="favorites-empty">
-      <p>Start adding movies to your favorites and they will appear here.</p>
+      <h2>No Favorite Movies Yet</h2>
+      <p>Start adding movies to your favorites and they will appear here!</p>
     </div>
   );
 }
 
-export default Favorite;
+export default Favorites;
